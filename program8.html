@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event App</title>
+  <style>
+    #spinner { display: none; }
+    .error { color: red; font-size: 12px; }
+  </style>
+</head>
+<body>
+
+<select id="categoryFilter">
+  <option value="all">All</option>
+  <option value="music">Music</option>
+  <option value="tech">Tech</option>
+</select>
+
+<input type="text" id="searchInput" placeholder="Search by name">
+
+<div id="events"></div>
+
+<form id="registerForm">
+  <input type="text" name="name" placeholder="Name">
+  <span class="error" id="nameErr"></span>
+  <input type="email" name="email" placeholder="Email">
+  <span class="error" id="emailErr"></span>
+  <select name="event">
+    <option value="Music Fest">Music Fest</option>
+    <option value="Tech Talk">Tech Talk</option>
+  </select>
+  <button type="submit">Sign Up</button>
+</form>
+
+<div id="spinner">Loading...</div>
+
+<script src="program8.js"></script>
+
+</body>
+</html>
