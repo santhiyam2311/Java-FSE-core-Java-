@@ -1,0 +1,5 @@
+let str = prompt("Enter a string")
+let cleaned = str.replace(/[^a-z0-9]/gi, '').toLowerCase()
+let rev = cleaned.split('').reverse().join('')
+if (cleaned === rev) console.log("Palindrome")
+else console.log("Not a palindrome")
